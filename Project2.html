@@ -1,0 +1,60 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project2</title>
+    <link rel="stylesheet" href="Project2.css">
+    <script src="Project2.js"></script>
+</head>
+<body>
+    <div class="modern-form">
+        <h2>Form nhập điểm</h2>
+      
+      <fieldset class='float-field'>
+        <h5>Họ và tên</h5>
+        <input id="name" type='text' placeholder="Trần Văn A">
+      </fieldset>
+      
+      <fieldset class='float-field'>
+        <h5>Điểm Toán</h5>
+        <input id="math" type='number' placeholder="0 ~ 10">
+      </fieldset>
+      
+      <fieldset class='float-field'>
+        <h5>Điểm Vật lý</h5>
+        <input id="physic" type='number'placeholder="0 ~ 10">
+      </fieldset>
+      
+      <fieldset class='float-field'>
+        <h5>Điểm Hóa học</h5>
+        <input id="chemistry" type='number'placeholder="0 ~ 10">
+      </fieldset>
+
+      <button id="submit" type="submit" onclick="inputMarks()">Nhập</button>
+      
+    </div>
+
+    <h2 style="color: aliceblue;">Bảng điểm</h2>
+
+    <div id="table" class="grid-container">
+        <div class="grid-item">Số thứ tự</div>
+        <div class="grid-item">Tên</div>
+        <div class="grid-item">Toán</div>
+        <div class="grid-item">Vật Lý</div>
+        <div class="grid-item">Hóa Học</div>
+        <div class="grid-item">Điểm trung bình</div>
+    </div>
+    
+    <button id="average" type="button" onclick="averageScore()">Tính điểm trung bình</button>
+    <button id="assessment" type="button" onclick="assessment()" disabled>Xét thành tích</button>
+    <button id="order" type="button" onclick="orderlist()" disabled>Thứ hạng</button>    
+
+    <div id="hint">
+        <strong>Chú thích:</strong><br><hr>
+        <div class="circle" style="background-color: green;"></div> Học sinh khá<br>
+        <div class="circle" style="background-color: lightgreen;"></div> Học sinh trung bình<br>
+        <div class="circle" style="background-color: red;"></div> Học sinh yếu
+    </div>
+</body>
+</html>

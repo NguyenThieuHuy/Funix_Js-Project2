@@ -1,0 +1,122 @@
+body {
+    background:#2c3e50;
+    font-family: 'Open Sans', sans-serif;
+    margin: auto;
+}
+
+h2{
+    text-align: center;
+}
+  
+.modern-form {
+    width: 500px;
+    margin: 30px auto;
+    background-color:  #fff;
+    border: solid 1px #ccc;
+    padding: 20px 10px;
+}
+.float-field {
+    border: none;
+    outline: none;
+    position: relative;
+    margin: 0 0 20px 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.float-field input {
+    border: none;
+    outline: none;
+    padding: 5px 5px 8px 0px;
+    width: 100%;
+    font-size: 18px;
+    border-bottom: solid 1px #efefef;
+}
+
+.grid-container{
+    display: grid;
+    grid-template-columns: 10% 30% auto auto auto auto;
+    gap: 5px;
+    margin: 10px;
+}
+.grid-item {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 10px;
+    text-align: center;
+}
+
+
+button:enabled{
+    color:#fff;
+    text-align: center;
+    text-align: center;
+    cursor: pointer;
+    padding: 5px;
+    margin: 5px;
+    position: relative;
+    border: none;
+    text-align: center;
+    transition-duration: 0.4s;
+    text-decoration: none;
+    overflow: hidden;
+}
+button:enabled:hover{
+    background:#fff !important;
+    box-shadow:0px 2px 10px 5px #97B1BF;
+    color:#000;
+}
+
+#average:enabled {
+    background-color: #f39c12;
+}
+#assessment:enabled{
+    background-color: #25f312;
+}
+#order:enabled{
+    background-color: #12b3f3;
+}
+#submit:enabled{
+    background-color: #ec3c62;
+}
+
+@media only screen and (max-width: 930px) {
+    .modern-form {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    .grid-container{
+        grid-template-columns: 0 30% auto auto auto auto;
+        gap: 0px;
+        margin: 5px;
+    }
+    .grid-item {
+        padding: auto;
+        background-color: #fff;
+        height: 30px;
+        overflow: hidden;
+    }
+    #hint{
+        display: none;
+    }
+}
+@media only screen and (max-width: 700px) {
+    .grid-container{
+        grid-template-columns: 0 30% 0 0 0 auto;
+    }    
+}
+
+#hint{
+    padding: 15px;
+    position: absolute;
+    top: 0px;
+    width: max-content;
+    background-color:#efefef;
+}
+.circle{
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    display: inline-block;
+    align-self: center;
+}
